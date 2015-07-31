@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BookLib</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/cover.css">
+</head>
+<body>
+
+  <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">BookLib</h3>
+            <nav>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Documentation</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="inner cover">
+          <h1 class="cover-heading">This is BookLib</h1>
+          <p class="lead">Let's make your own bookshelf.</p>
+          <p class="lead">
+            <a class="btn btn-lg btn-default" href="#">Add book</a>
+          </p>
+          {% block content %}{% endblock %}
+        </div>
+        <div class="mastfoot">
+          <div class="inner">
+            <p>
+              <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+              </a>
+              <br />This work is licensed under a
+              <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
