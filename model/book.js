@@ -3,6 +3,7 @@
 var seq = 3;
 var repo = [{ id: 1, title: 'foo', author: 'John' }, { id: 2, title: 'bar', author: 'Sam' }];
 
+// TODO use MongoDB
 module.exports = {
 
   all: function() {
