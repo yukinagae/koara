@@ -12,6 +12,7 @@
     "koa-route": "*",
     "co-views": "*",
     "swig": "*",
-    "koa-static": "*"
+    "koa-static": "*",
+    "co-body": "*"
   }
 }

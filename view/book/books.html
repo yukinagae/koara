@@ -6,11 +6,16 @@
     <tr>
       <td>title</td>
       <td>author</td>
+      <td></td>
     </tr>
     {% for book in books %}
     <tr>
       <td>{{ book.title }}</td>
       <td>{{ book.author }}</td>
+      <td>
+        <a href="/book/{{ book.id }}/edit" class="btn btn-primary">Edit</a>
+        <a href="/book/{{ book.id }}/remove" class="btn btn-primary">Remove</a>
+      </td>
     </tr>
     {% endfor %}
   </table>
