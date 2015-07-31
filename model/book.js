@@ -24,18 +24,16 @@ module.exports = {
   update: function(id, title, author) {
     for (var b of repo) {
       if (b.id == id) {
-        // TODO
+        b.title = title;
+        b.author = author;
+        return b;
       }
     }
   },
   delete: function(id) {
-    for (var b of repo) {
-      if (b.id == id) {
-        // TODO
-        return true;
-      }
-    }
-    return false;
+    repo.some(function(b, i){
+      if (b.id == id) repo.splice(i,1);
+    });
   }
 
 };
